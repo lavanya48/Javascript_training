@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Arrays !!!</title>
+        <script type="text/javascript">
+        document.write("First statement <br />");
+        var students = new Array("Liany", "Don", "Agatha", "Glinn", "Stephnie");
+        Array.prototype.displayItems=function(){
+            for(i=0; i<this.length; i++){
+                document.write(this[i] + "<br/>");
+            }
+        }
+        document.write("Students array : <br />");
+        students.displayItems();
+
+        document.write("<br /> The number of students " + students.length + "<br />");
+        document.write("<br /> The Sorted array : <br/>");
+        students.sort();
+        students.displayItems();
+        
+        document.write("<br /> The reversed array is : <br />");
+        students.reverse();
+        students.displayItems();
+        document.write("<br/> The array after removing the last element <br/>");
+        students.pop();
+        students.displayItems();
+        document.write("<br/> The array after pushing new element<br/>");
+        students.push("David");
+        students.displayItems();
+        
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+

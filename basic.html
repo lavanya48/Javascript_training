@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>What can Javascript do ??</h1>
+        <p id="demo">Javascript can change content of HTML</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Content changed!!"'>Click me!!</button>
+        <p>In this case Javascript can change the source(src) attribute of an image</p>
+        <button type="button" onclick='document.getElementById("myimg").src="https://www.w3schools.com/js/pic_bulbon.gif"'>Turn ON</button>
+        <img id="myimg" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <button type="button" onclick='document.getElementById("myimg").src="https://www.w3schools.com/js/pic_bulboff.gif"'>Turn OFF</button>
+        <p></p>
+        <img id="secondimg" src="circle.png" style="width:100px">
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='40px'">Change Font</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide content</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Display</button>
+        <p></p>
+        <p id = "one"></p>
+        <script>document.getElementById('one').innerHTML="My first JavaScript"</script>
+    </body>
+</html>

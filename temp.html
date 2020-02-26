@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> A Webpage .</h1>
+        <p> First line in Paragraph.</p>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML=5+6;
+            document.write("second line");
+            window.alert("Fire alaram!!!");
+        </script>
+        <button type="button" onclick="document.write('Cleared')">Delete!!</button>
+        <h2>Javascript function</h2>
+        <p> This performs multiplication and returns the result</p>
+        <p id="one"></p>
+        <p id="two"></p>
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+        <script>
+            x=myfunc(2,4);
+            document.getElementById("one").innerHTML=x;
+            function myfunc(a,b)
+            {
+                return a*b;
+            } 
+        </script>
+    </body>
+</html>
+
+

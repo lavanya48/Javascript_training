@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Loops !!!</title>
+        <script type="text/javascript">
+        document.write("<b> Using for loop </b> <br /><br />");
+        var students = new Array("Meyer", "Rowling", "Baldacci", "Brown", "Taylor", "Christee", "Flynn");
+        for(i=0; i<students.length; i++){
+            document.write(students[i]  + "<br />");
+        }
+
+        document.write("<br /><b> Using while loop </b> <br />");
+        var i=0, j=1, k;
+        document.write("<br/>Fibonacci numbers below 40 are as follow : <br/>");
+        while(i<40){
+            document.write( i + "<br />");
+            k = i + j;
+            i = j;
+            j = k;
+        }
+
+        document.write("<br /> <b> Using do while loop </b> <br /> <br />");
+        var i = 2;
+        do{
+            document.write( i + " ");
+            i = i + 2;
+        }while(i<=20)
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

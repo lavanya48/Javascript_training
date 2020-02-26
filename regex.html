@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Regular Expressions</h2>
+        <p>Click the button to do a global search for character "h" in the string</p>
+        <button onclick="myfunction()">Try it</button>
+        <p id="demo"></p>
+        <p>Click the button to do a global search for number 1 to 4 in the string</p>
+        <button onclick="myfunction1()">Try it</button>
+        <p id="demo1"></p>
+        <p> Click the button to do global search for any of the specified alternative red|green</p>
+        <button onclick="myfunction2()">Try it</button>
+        <p id="demo2"></p>
+        <p> Click the button to do global search for digits in a string</p>
+        <button onclick="myfunction3()">Try it</button>
+        <p id="demo3"></p>
+        <p>Search for characters <br>
+        "LO"
+        <br> in the <strong>beginning</strong> of the word in phrase:
+        <br>"HELLO, LOOK AT YOU!"</p>
+        <p id="demo4"></p>
+
+        <p>Click the button to do a global search for at least one "o" in a string.</p>
+        <button onclick="myFunction5()">Try it</button>
+        <p id="demo5"></p>
+
+
+        <p>Click the button to do a global search for an "l", followed by zero or more "o" characters.</p>
+        <button onclick="myFunction6()">Try it</button>
+        <p id="demo6"></p>
+
+        <p>Click the button to do a global search for a "1", followed by zero or one "0" characters.</p>
+        <button onclick="myFunction7()">Try it</button>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+
+
+        <button onclick="document.write('Cleared')">Delete</button>
+        <script>
+            var str= "HELLO, LOOK AT YOU!"
+            var pat= /\bLO/;
+            var r = str.search(pat);
+            document.getElementById("demo4").innerHTML=r;
+            function myfunction()
+            {
+                var inp="is this all there is?";
+                var patt=/[h]/g;
+                var res= inp.match(patt);
+                document.getElementById("demo").innerHTML=res;
+            }
+            function myfunction1()
+            {
+                var inp="234567899911";
+                var patt=/[1-4]/g;
+                var res=inp.match(patt);
+                document.getElementById("demo1").innerHTML=res;
+            }
+            function myfunction2()
+            {
+                
+                var inp="re red pink yellow green blue green violet";
+                var patt=/(red|green|pink)/g;
+                var res=inp.match(patt);
+                document.getElementById("demo2").innerHTML=res;
+            }
+            function myfunction3()
+            {
+                
+                var inp="Give 100%!";
+                var patt=/\d/g;
+                var res=inp.match(patt);
+                document.getElementById("demo3").innerHTML=res;
+            }
+
+            function myFunction5() 
+            {
+                var str = "Hellooo World! Hello W3Schools!"; 
+                var patt1 = /o+/g;
+                var result = str.match(patt1);
+                document.getElementById("demo5").innerHTML = result;
+            }
+            
+            function myFunction6() 
+            {
+                var str = "Hellooo World! Hello W3Schools!"; 
+                var patt1 = /lo*/g;
+                var result = str.match(patt1);
+                document.getElementById("demo6").innerHTML = result;
+            } 
+            
+            function myFunction7() 
+            {
+                var str = "1, 100 or 1000?";
+                var patt1 = /10?/g;
+                var result = str.match(patt1);
+                document.getElementById("demo7").innerHTML = result;
+            }
+            var obj= /e/.exec("The best things in life are free.");
+            document.getElementById("demo8").innerHTML= "Found " + obj[0] +" in positions " + obj.index + " in the text : " + obj.input;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>OOJS!!!</title>
+        <script type="text/javascript">
+        var student =new Object();
+        student.fname = "David";
+        student.lname = "Baldacci";
+        student.id = 24;
+        student.Emarks = 89;
+        student.Mmarks = 37;
+        student.Smarks = 76;
+        student.calculateaverage = function()
+        {
+            return (student.Emarks+student.Mmarks+student.Smarks)/3;
+        }
+        student.displaydetails = function()
+        {
+            document.write("Student id : "+ student.id + "<br />");
+            document.write("Student name : "+ student.fname +" "+ student.lname+"<br />");
+            var ave = student.calculateaverage();
+            document.write("Average marks : "+ ave + "<br />");
+        }
+        student.displaydetails();
+        </script>
+    </head>
+    <body></body>
+</html>

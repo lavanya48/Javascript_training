@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Conditional Statement </title>
+        <script type="text/javascript">
+        var age = prompt("Enter your age :  ");
+        if (age >= 18)
+            document.write("<br /> Welcome to Adulthood!! <br />");
+        if (age < 18)
+            document.write("<br /> Still Few more years to go <br /> ");
+
+
+        var time = new Date().getHours();
+        if (time < 12)
+            document.write("Good Morning!! <br />");
+        else
+            document.write("Good afternoon <br />");
+
+
+        var a = prompt("Enter first number: ");
+        var b = prompt("Enter second number: ");
+        a =parseInt(a);
+        b =parseInt(b);
+        if (a == b)
+            document.write("<br />" + a + " is equal to " + b + "<br />");
+        else if (a < b)
+            document.write("<br />" + a + " is less than " + b + "<br />");
+        else 
+            document.write("<br />" + a + " is greater than " + b + "<br />");
+        </script>
+    </head>
+    <body></body>
+</html>
